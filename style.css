@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Poppins&family=Rajdhani:wght@400;600&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px red solid; */
+}
+.main{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    background-image: url(./back2.JPG);
+    background-size: cover;
+    color: white;
+}
+
+.side{
+    height: 100%;
+    width: 10%;
+    padding: 10px 0px 50px 0px;
+    border-right: 1px solid #7b9493;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-bottom: 20px; */
+}
+.side p:nth-child(3){
+    width: 110px;
+    rotate: 90deg;
+}
+
+.main-box{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    height: 10vh;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    color: rgb(192, 216, 239);
+}
+.logo{
+    width: 30%;
+}
+.logo h1{
+    font-size: 35px;
+    cursor: pointer;
+}
+.logo h1:hover{
+    color: aqua;
+}
+.nav-header{
+    width: 70%;
+}
+nav button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #3d4e55;
+}
+i{
+    font-size: 28px;
+    color: rgb(188, 216, 240);
+    cursor: pointer;
+}
+
+.text{
+    /* background-color: #b65e5e; */
+    padding: 50px;
+    height: 550px;
+    width: 80%;
+    
+}
+.text h1{
+    font-size: 140px;
+    font-family: 'Exo', sans-serif;
+}
+.text button{
+    padding: 40px 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+
+}
+.text button:hover{
+    border: 1px solid red;
+    cursor: pointer;
+}
+.text .btn-section{
+    /* background-color: #96aef1; */
+    height: 180px;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-section{
+    /* background-color: #a576e2; */
+    height: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    width: 80px;
+}
+.logo-section img{
+    height: 80px;
+    border-radius: 40px;
+}
+.logo-section h2{
+    font-size: 40px;
+}
+.text2{
+    width: 100%;
+    padding-top: 80px ;
+    display: flex;
+    justify-content: space-between;
+}
+.text2 img{
+    height: 200px;
+    border-radius: 50px;
+}
+.text2 .box-1{
+    height: 220px;
+    width: 300px;
+    cursor: pointer;
+}
+.text2 .box-2{
+    height: 220px;
+    width: 300px;
+   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.text2 .box-3{
+    text-align: center;
+    height: 220px;
+    width: 300px;
+    cursor: pointer;
+   
+}
+
+
+@media(max-width:1075px){
+    .main{
+        height: 170vh;
+    }
+}
+
+@media(max-width:768px){
+   
+    .side{
+        display: none;
+    }
+    nav{
+        padding: 10px;
+    }
+    .nav-header{
+        width: 20%;
+    }
+    .res{
+        display: none;
+    }
+}
+@media(max-width:667px){
+    .main{
+        padding: 0px;
+        width: 100%;
+        height: 200vh;
+    }
+    nav{
+        padding: 10px;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: #e65757; */
+    }
+    .nav-header{
+        /* display: flex;
+        justify-content: space-between; */
+        width: 30%;
+    }
+    nav button{
+
+        padding: 10px 40px;
+    }
+    .logo{
+        width: 20%;
+    }
+    .text{
+        padding: 10px;
+        height: 20%;
+        width: 100%;
+    }
+    .text h1{
+        font-size: 60px;
+    }
+    .text button{
+        padding: 10px 20px;
+    }
+    .text2{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        /* padding: 50px; */
+        margin: 0px;
+    }
+
+    
+    
+}
